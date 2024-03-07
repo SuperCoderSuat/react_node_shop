@@ -1,8 +1,16 @@
 import './NewCollections.scss'
-import new_collections from '../../assets/data/new_collections'
 import Item from '../item/Item';
+import { useEffect, useState } from 'react';
 
 const NewCollections = () => {
+    const [new_collections, setNew_Collections] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3000/newcollections')
+        .then((response) => response.json())
+        .then((data) => setNew_Collections(data))
+    }, []);
+
     return (
         <div className='new-collections'>
             <h1>NEW COLLECTIONS</h1>

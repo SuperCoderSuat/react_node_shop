@@ -12,6 +12,7 @@
 
         p {
             color: #171717;
+            font-size: 30px;
         }
     }
 
@@ -81,6 +82,7 @@
 
     .nav-dropdown {
         display: none;
+        transition: transform 0.5s;
     }
 }
 
@@ -161,7 +163,7 @@
             display: block;
             width: 30px;
             rotate: -90deg;
-            transition: 0.5sec;
+            transition: 0.5sec !important;
         }
 
         .nav-menu {

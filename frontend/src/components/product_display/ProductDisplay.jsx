@@ -33,8 +33,8 @@ const ProductDisplay = (probs) => {
                     <p>(122)</p>
                 </div>
                 <div className="product-display-right-prices">
-                    <div className="product-display-right-price-old">${product.old_price}</div>
-                    <div className="product-display-right-price-new">${product.new_price}</div>
+                    <div className="product-display-right-price-old">{product.old_price} €</div>
+                    <div className="product-display-right-price-new">{product.new_price} €</div>
                 </div>
                 <div className="product-display-right-description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsa inventore amet officiis nihil sapiente nostrum nobis repellendus ipsam maiores.
